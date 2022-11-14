@@ -1,0 +1,1 @@
+Kilka przykładowych operacji na bazie danych. W pierwszym pliku wszystkie podstawowe operacje: dodawanie, usuwanie, aktualizowanie, filtrowanie itp. W drugim pliku kalendarz polączony z w.w. bazą danych. Wszystko podpięte w plikach aspx, także gotowe do działania (poza samą bazą, którą trzeba zainicjować).
