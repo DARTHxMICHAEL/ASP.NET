@@ -8,13 +8,14 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 
-
-
 public partial class DataBase : System.Web.UI.Page
 {
     //połącznie z bazą
     SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
 
+    /// <summary>
+    /// ładowanie strony
+    /// </summary>
     protected void Page_Load(object sender, EventArgs e)
     {
         //otwórz połącznie
@@ -26,7 +27,9 @@ public partial class DataBase : System.Web.UI.Page
         //GridView1.DataBind();
     }
 
-    //dodaj użytkownika
+    /// <summary>
+    /// dodaj użytkownika
+    /// </summary>
     protected void Button1_Click(object sender, EventArgs e)
     {
         try
@@ -68,7 +71,9 @@ public partial class DataBase : System.Web.UI.Page
            
     }
 
-    //aktualizuj dane
+    /// <summary>
+    /// aktualizuj dane
+    /// </summary>
     protected void Button2_Click(object sender, EventArgs e)
     {
         try
@@ -102,7 +107,9 @@ public partial class DataBase : System.Web.UI.Page
         
     }
 
-    //usuń użytkownika
+    /// <summary>
+    /// usuń użytkownika
+    /// </summary>
     protected void Button3_Click(object sender, EventArgs e)
     {
         try
@@ -136,8 +143,9 @@ public partial class DataBase : System.Web.UI.Page
 
     }
 
-
-    //filtruj wyniki
+    /// <summary>
+    /// filtruj wyniki
+    /// </summary>
     protected void Button4_Click(object sender, EventArgs e)
     {
         try
@@ -171,12 +179,14 @@ public partial class DataBase : System.Web.UI.Page
         
     }
 
-    //usuń filtry
+    /// <summary>
+    /// usuń filtry
+    /// </summary>
     protected void Button5_Click(object sender, EventArgs e)
     {
         try
         {
-            //komenda
+            //komenda pokazjąca wszystkie elementy
             String find = "select * from TableOne";
             SqlCommand command = new SqlCommand(find, conn);
             command.ExecuteNonQuery();
@@ -203,7 +213,5 @@ public partial class DataBase : System.Web.UI.Page
         }
 
     }
-
-
 
 }
