@@ -17,7 +17,9 @@ public partial class Calendar : System.Web.UI.Page
     //połączenie z bazą
     SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
 
-    //przy ładowaniu strony
+    /// <summary>
+    /// ładowanie strony
+    /// </summary>
     protected void Page_Load(object sender, EventArgs e)
     {
         //zbuduj nową tabele 'wydarzeń
@@ -28,7 +30,9 @@ public partial class Calendar : System.Web.UI.Page
         conn.Open();
     }
 
-    //tworzenie tabeli wydarzeń społecznych
+    /// <summary>
+    /// tworzenie tabeli wydarzeń społecznych
+    /// </summary>
     private void BuildSocialEventTable()
     {
         //SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=Practice;User ID=sa;Password=************");
@@ -41,7 +45,9 @@ public partial class Calendar : System.Web.UI.Page
     }
 
 
-    //kalendarz CALENDAR1(DayRender)
+    /// <summary>
+    /// obsługa kalendarza CALENDAR1(DayRender)
+    /// </summary>
     protected void Calendar1_DayRender(object sender, DayRenderEventArgs e)
     {
         try
@@ -68,7 +74,9 @@ public partial class Calendar : System.Web.UI.Page
         catch (Exception) { }
     }
 
-    //kalendarz CALENDAR1(SelectionChanged)
+    /// <summary>
+    /// obsługa kalendarza CALENDAR1(SelectionChanged)
+    /// </summary>
     protected void Calendar1_SelChanged(object sender, EventArgs e)
     {
         //wypisz zaznaczoną datę w 'TextBox1
@@ -97,14 +105,18 @@ public partial class Calendar : System.Web.UI.Page
         }
     }
 
-    //kalendarz CALENDAR1(OnInit) inicjalizacja
+    /// <summary>
+    /// inicjalizacja kalendarza CALENDAR1(OnInit)
+    /// </summary>
     override protected void OnInit(EventArgs e)
     {
         InitializeComponent();
         base.OnInit(e);
     }
 
-    //kalendarz CALENDAR1(InitialisationInfo) uzupełnienie informacji
+    /// <summary>
+    /// inicjalizacja i uzupełnienie informacji kalendarza CALENDAR1(InitialisationInfo)
+    /// </summary>
     private void InitializeComponent()
     {
         this.Calendar1.DayRender += new System.Web.UI.WebControls.DayRenderEventHandler(this.Calendar1_DayRender);
@@ -113,7 +125,9 @@ public partial class Calendar : System.Web.UI.Page
 
     }
 
-    //dodaj dane do bazy
+    /// <summary>
+    /// dodanie danych do bazy 
+    /// </summary>
     protected void Button1_Click(object sender, EventArgs e)
     {
         //sprawdź czy użytkownik się zalogował
@@ -143,7 +157,9 @@ public partial class Calendar : System.Web.UI.Page
         }     
     }
 
-    //usuń wszystkie rekordy z bazy (wydarzenia)
+    /// <summary>
+    /// usuń wszystkie rekordy z bazy (wydarzenia)
+    /// </summary>
     protected void Button2_Click(object sender, EventArgs e)
     {
         try
@@ -162,7 +178,9 @@ public partial class Calendar : System.Web.UI.Page
         
     }
 
-    //usuń wybrane wydarzenia z bazy
+    /// <summary>
+    /// usuń wybrane wydarzenia z bazy
+    /// </summary>
     protected void Button3_Click(object sender, EventArgs e)
     {
         try
@@ -178,9 +196,6 @@ public partial class Calendar : System.Web.UI.Page
             GridView1.DataBind();
         }
         catch (Exception ex) { }
-          
     }
-
-
 
 }
