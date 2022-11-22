@@ -24,7 +24,9 @@ public partial class Sortowanie : System.Web.UI.Page
     public const int LICZBY = 30000;
 
   
-    //przygotowanie losowych danych
+    /// <summary>
+    /// przygotowanie losowych danych z zakresu 1-9
+    /// </summary>
     void PrzygotowanieDanych()
     {
         //generowanie <LICZBY> liczb losowych
@@ -41,7 +43,10 @@ public partial class Sortowanie : System.Web.UI.Page
     }
 
 
-    /// <param name="tablica">tablica z liczbami losowymi</param>
+    /// <summary>
+    /// sortowanie bąbelkowe O(n^2)
+    /// </summary>
+    /// <param name="tablica">tablica z wcześniej utworzonymi liczbami losowymi</param>
     void BubbleSort(int[] tablica)
     {
         //sprawdzenie długości tablicy
@@ -65,7 +70,9 @@ public partial class Sortowanie : System.Web.UI.Page
         //TextBox1.Text += randTablicaOne[10].ToString();
     }
 
-
+    /// <summary>
+    /// sortowanie przez scalanie, główna funkcja O(nlogn)
+    /// </summary>
     /// <param name="tablica">tablica z liczbami losowymi</param>
     /// <param name="l">index skrajnego lewego elementu</param>
     /// <param name="r">index skrajnego prawego elementu</param>
@@ -87,6 +94,9 @@ public partial class Sortowanie : System.Web.UI.Page
     }
 
 
+    /// <summary>
+    /// sortowanie przez scalanie, funkcja pomocnicza (łączenie 2 tablic)
+    /// </summary>
     /// <param name="tablica">tablica z liczbami losowymi</param>
     /// <param name="l">index skrajnego lewego elementu</param>
     /// <param name="r">index skrajnego prawego elementu</param>
@@ -153,7 +163,9 @@ public partial class Sortowanie : System.Web.UI.Page
     }
 
 
-    //GŁÓWNA FUNKCJA
+    /// <summary>
+    /// GŁÓWNA FUNKCJA (wywołanie przycisku)
+    /// </summary>
     protected void Button1_Click(object sender, EventArgs e)
     {
         //ui-info
@@ -188,9 +200,6 @@ public partial class Sortowanie : System.Web.UI.Page
 
         //test
         //TextBox1.Text += randTablicaTwo[10].ToString();
-
     }
-
-
 
 }
