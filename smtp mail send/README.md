@@ -1,1 +1,1 @@
-Formularz kontaktowy - wysyła emaila korzystając z serwera SMTP (od gmaila). Konfiguracja w ramach aplikacji wykorzystującej API Gmaila. W celu ominięcia aotoryzacji OAuth 2.0 wykorzystałem bibliotekę 'EASendMail.
+Formularz kontaktowy - wysyła emaila korzystając z serwera SMTP (od gmaila). Konfiguracja w ramach aplikacji wykorzystującej API Gmaila. W celu ominięcia autoryzacji OAuth 2.0 wykorzystałem bibliotekę 'EASendMail.
