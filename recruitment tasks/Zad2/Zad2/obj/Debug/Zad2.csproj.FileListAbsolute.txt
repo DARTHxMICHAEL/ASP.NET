@@ -1,0 +1,7 @@
+F:\STUDIO\VISUAL\KURS3\Zad2\Zad2\bin\Debug\Zad2.exe.config
+F:\STUDIO\VISUAL\KURS3\Zad2\Zad2\bin\Debug\Zad2.exe
+F:\STUDIO\VISUAL\KURS3\Zad2\Zad2\bin\Debug\Zad2.pdb
+F:\STUDIO\VISUAL\KURS3\Zad2\Zad2\obj\Debug\Zad2.csprojAssemblyReference.cache
+F:\STUDIO\VISUAL\KURS3\Zad2\Zad2\obj\Debug\Zad2.csproj.CoreCompileInputs.cache
+F:\STUDIO\VISUAL\KURS3\Zad2\Zad2\obj\Debug\Zad2.exe
+F:\STUDIO\VISUAL\KURS3\Zad2\Zad2\obj\Debug\Zad2.pdb
