@@ -5,5 +5,5 @@ Sieć(i) wykorzystuje tangensoidalną funkcję aktywacji. Wagi początkowe są l
 następnie kolejno 4 oraz 3 w warstwach ukrytych i jednego wyjścia. Na podstawie wartości wyjściowej (0,1) ustalana jest trajektoria lotu danego ptaka. W oprciu o wartość
 fitness (dopasowania) mutacji podlega gorsza połowa sieci. Mutacje obejmują cztery warianty, współczynnik mutacji wag wynosi 8%.
 
-![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/DARTHxMICHAEL/ASP.NET/blob/main/genetic%20neural%20network/20230108_222313.jpg)https://github.com/DARTHxMICHAEL/ASP.NET/blob/main/genetic%20neural%20network/20230108_222313.jpg?raw=true)
+![screen]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/DARTHxMICHAEL/ASP.NET/blob/main/genetic%20neural%20network/20230108_222313.jpg)https://github.com/DARTHxMICHAEL/ASP.NET/blob/main/genetic%20neural%20network/20230108_222313.jpg?raw=true)
 
