@@ -2,4 +2,8 @@ Sieć neuronowa oparta na neuronach sigmoidalnych. Neurony ukryte wykorzystują 
 
 Uczenie odbywa się w trybie z nauczycielem poprzez minimalizację funkcji celu. Ciągłość funkcji (różniczkowalność) umożliwia zastosowanie metody gradientowej. W celu ograniczenia ryzyka 'utknięcia w minimum lokalnym aktualizacja wag odbywa się z momentum (aktualizacja dyskretna). Maksymalny dopuszczalny błąd na poziomie 5%. Użytkownik ustala liczbę epok- powtórzeń treningowych w ramach których zostaną wykorzystane wszystkie przypadki uczące (8).
 
-Kod nie jest mój! Jednak zmodyfikowałem go pod kątem trzy elementowego problemu XOR i zoptymalizowałem pod to właśnie zastosowanie. Przy pracy korzystałem z książki 'Sieci neuronowe do przetwarzania informacji' Stanisława Osowskiego.
+Kod nie jest mój! Jednak zmodyfikowałem go pod kątem trzy elementowego problemu XOR i zoptymalizowałem pod to właśnie zastosowanie. Przy pracy korzystałem z książki 'Sieci neuronowe do przetwarzania informacji' Stanisława Osowskiego oraz 'Leksykonu Sieci Neuronowych' R. Tadeuszewicza oraz M. Szaleńca.
+
+
+![alt text](https://github.com/DARTHxMICHAEL/ASP.NET/blob/main/sigmoid%20neural%20network/20230108_222324.jpg?raw=true)
+
